@@ -5,8 +5,8 @@ defmodule Edate do
   Documentation for `Edate`.
   """
 
-  def edate do
-    now = Timex.now("Asia/Tokyo")
+  def edate zone \\ "Asia/Tokyo" do
+    now = Timex.now(zone)
     printf("%4d/%02d/%02d %02d:%02d:%02d\n", [now.year, now.month, now.day, now.hour, now.minute, now.second])
   end
 
