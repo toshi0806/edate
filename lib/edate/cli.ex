@@ -4,6 +4,7 @@ defmodule Edate.CLI do
   """
 
   def main(_argv) do
+    Application.put_env(:tzdata, :data_dir, File.cwd!())
     Edate.edate()
   end
 end
