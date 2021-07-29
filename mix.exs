@@ -23,7 +23,6 @@ defmodule Edate.MixProject do
   defp deps do
     [
       {:zoneinfo, "~> 0.1.0"},
-      {:timex, "~> 3.0"},
       {:exprintf, "~> 0.1.6"},
     ]
   end

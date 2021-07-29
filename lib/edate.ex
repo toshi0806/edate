@@ -6,7 +6,7 @@ defmodule Edate do
   """
 
   def edate zone \\ "Asia/Tokyo" do
-    now = Timex.now(zone)
+    {:ok, now} = DateTime.now(zone)
     printf("%4d/%02d/%02d %02d:%02d:%02d\n", [now.year, now.month, now.day, now.hour, now.minute, now.second])
   end
 
