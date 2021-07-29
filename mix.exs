@@ -22,7 +22,7 @@ defmodule Edate.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      {:tzdata, "~> 1.1"},
+      {:zoneinfo, "~> 0.1.0"},
       {:timex, "~> 3.0"},
       {:exprintf, "~> 0.1.6"},
     ]
