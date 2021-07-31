@@ -1,2 +1,2 @@
 import Config
-config :elixir, time_zone_database: Zoneinfo.TimeZoneDatabase
+config :tzdata, data_dir: "#{System.get_env("HOME")}/.config/tzdata"
